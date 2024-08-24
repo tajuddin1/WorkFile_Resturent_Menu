@@ -1,0 +1,485 @@
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    top : 0;
+    background-color: #ffffff;
+    z-index: 850;
+}
+
+.menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-direction:column;
+}
+
+.menu-section {
+    margin-bottom: 20px;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.menu-header span {
+    font-weight: bold;
+    font-weight: 100;
+    color: #303030;
+    font-size: 18px;
+}
+
+
+.toggle-btn {
+    background: none;
+    border: none;
+    width: 30px; /* Ajustez la taille selon vos besoins */
+    height: 30px; /* Ajustez la taille selon vos besoins */
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(180deg);
+}
+
+/* Image pour le chevron vers le bas */
+.toggle-btn.closed {
+    background-image: url('image/chevrondown.png');
+}
+
+/* Image pour le chevron vers le haut */
+.toggle-btn.open {
+    background-image: url('image/chevronup.png');
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #fff;
+    /*padding: 10px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 éléments par ligne par défaut */
+    gap: 20px; /* Espace entre les éléments */
+    margin-top: 15px;
+}
+
+/* Pour les petits écrans */
+@media (max-width: 768px) {
+    .dropdown-content {
+        grid-template-columns: 1fr; /* 1 élément par ligne */
+    }
+
+}
+
+.dropdown-item {
+    display: flex; /* Utiliser flexbox pour aligner l'image et le texte */
+    padding: 12px;
+    border-radius: 5vw;
+    background-color: #f8f8f8;
+    text-align: left; /* Alignement du texte à gauche */
+    justify-content: start;
+
+}
+
+.menu-image {
+    width: 116px; /* Hauteur de l'image fixe, ajustez selon vos besoins */
+    height: 115px; /* Hauteur automatique pour maintenir le ratio */
+    object-fit: cover;
+    margin-right: 15px; /* Espace entre l'image et le texte */
+    border-radius: 3vw;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.item-details h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.item-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.price {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 10px
+}
+
+
+.boissons {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: none;
+    flex-direction:column;
+}
+
+
+
+
+
+footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    
+}
+
+footer h3 {
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 25px;
+    color : var(--footer-h3-color)
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    color: var(--footer-ul-color);
+}
+
+footer li {
+    margin: 5px 0;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.social-links img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    z-index: 1;
+    padding: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.button-section {
+    display: flex;
+    justify-content: center;
+    background-color: #e4e4e4;
+    height: 10vw;
+    padding: 1vw;
+    margin: 2vw;
+    border-radius: 3vw;
+
+}
+
+
+.button{
+    background-color: transparent;
+    border: none;
+    padding: 0vw 15vw 0vw 15vw;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 4vw;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 100;
+    position: sticky;
+
+}
+
+.add-btn{
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    border: none;
+    margin-top: auto;
+    font-size: 21px !important;
+
+}
+
+
+/* Style du conteneur du sélecteur */
+select.button-selector {
+    appearance: none;
+    background-color: #fff;
+    border: none;
+    padding: 8px 12px;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 100;
+    border-radius: 4px;
+    background-image: url('image/france.png'); /* Drapeau français par défaut */
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 25px;
+    padding-left: 45px;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: sticky;
+}
+
+/* Styles pour chaque option de langue */
+select.button-selector option.langfr {
+    background-image: url('image/france.png');
+}
+select.button-selector option.langen {
+    background-image: url('image/anglais.png');
+}
+select.button-selector option.langes {
+    background-image: url('image/espange.png');
+}
+select.button-selector option.langes {
+    background-image: url('image/allemagne.svg');
+}
+/* Ajout des drapeaux aux options */
+select.button-selector option {
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 10px center;
+    padding-left: 40px;
+}
+
+/* Pour cacher les indicateurs de sélection du navigateur */
+select::-ms-expand {
+    display: none;
+}
+
+/* Cache la flèche de sélection sur certains navigateurs */
+select.button-selector {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+
+#main-course-menu {
+    display: none; /* Masque le menu par défaut */
+}
+
+#main-course-menu.open {
+    display: block; /* Affiche le menu lorsque la classe "open" est appliquée */
+}
+
+
+.modal {
+    display: none; /* Caché par défaut */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Effet de flou en arrière-plan */
+    backdrop-filter: blur(5px); /* Effet de flou */
+    z-index: 1000; /* Assure que le modale est au-dessus des autres éléments */
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Style pour le contenu du modale */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; /* Ajuste la largeur du modale selon tes besoins */
+    max-width: 700px;
+}
+
+
+.modal-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.modal-details {
+    margin-top: 10px;
+}
+
+.modal-details h4 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.modal-details p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #555;
+}
+
+.modal-price {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px; /* Espacement entre le prix et le bouton */
+}
+
+/* Style pour le bouton d'allergènes */
+.allergen-btn {
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 5px;
+    background-color: #32b839;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.allergen-btn:hover {
+    background-color: #32b839;
+}
+
+/* Style pour la liste des allergènes */
+.allergen-list {
+    display: none; /* Caché par défaut */
+    margin-top: 20px;
+}
+
+.allergen-list h5 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.allergen-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.allergen-list li {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Bouton de fermeture du modale */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+.dropdown-item[data-title="Crêpes"] .description-liste {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-item[data-title="Crêpes"] .description-liste ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.1;
+    margin: 0;
+    width: 40%; /* Chaque colonne prend environ la moitié de l'espace disponible */
+}
+
+.dropdown-item[data-title="Glace deux boules ou trois boules au choix"] .description-liste ul li {
+    padding: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.dropdown-item[data-title="Glace deux boules ou trois boules au choix"] .description-liste {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-item[data-title="Glace deux boules ou trois boules au choix"] .description-liste ul {
+    padding: 0;
+    margin: 0;
+    margin-left: 16px;
+    width: 35%; /* Chaque colonne prend environ la moitié de l'espace disponible */
+}
+
+.dropdown-item[data-title="Crêpes"] .description-liste ul li {
+    padding: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+
+
+
+
+
+
+
+/* Styles spécifiques pour la description en liste dans le modal des crêpes */
+
+
+.crepes-modal .description-liste {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.crepes-modal .description-liste ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 48%; /* Chaque colonne prend environ la moitié de l'espace disponible */
+}
+
+.crepes-modal .description-liste ul li {
+    padding: 5px 0;
+    font-size: 16px; /* Ajustez la taille de la police si nécessaire */
+    color: #555;
+}
+
+/* Styles spécifiques pour la description en liste dans le modal des crêpes */
+.glaces-modal .description-liste {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.glaces-modal .description-liste ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 48%; /* Chaque colonne prend environ la moitié de l'espace disponible */
+}
+
+.glaces-modal .description-liste ul li {
+    padding: 5px 0;
+    font-size: 16px; /* Ajustez la taille de la police si nécessaire */
+    color: #555;
+}
+
+
+.pricecrepe {
+    display: block;  /* Assure que le prix est sur une nouvelle ligne */
+    font-weight: 600;
+
+}

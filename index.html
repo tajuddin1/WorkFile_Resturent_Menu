@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Dropdown</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+
+    <header>
+        <select class="button-selector" id="languageSwitcher">
+            <option class="langfr" value="fr"  selected>Français</option>
+            <option class="langen"value="en">English</option>
+            <option class="langes"value="es">Spanish</option>
+            <option class="langes"value="de">Deutsch</option>
+        </select>
+        <div class="button-section">
+            <button class="button" id="btn-menu">Menu</button>
+            <button class="button" id="btn-boissons">Boissons</button>
+        </div>
+    </header>
+
+
+
+
+<div class="menu" id='menu'>
+    <div class="menu-section">
+        <div class="menu-header" data-target="starter-menu">
+            <span data-translate="categorie1">ENTRÉES</span>
+            <button class="toggle-btn closed"></button>
+        </div>
+        <div class="dropdown-content" id="starter-menu">
+            <!-- Ajoutez ici les éléments pour Entrée -->
+            <div class="dropdown-item" data-title="Assiette de charcuterie" data-description="Jambons pays, saucisson, andouille, spianata " data-price="12,00 €" data-image="image/nachos.jpg" data-allergens=""> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre1">Assiette de charcuterie</h4>
+                    <p data-translate="description1">Jambons pays, saucisson, andouille, spianata</p>
+                    <span class="price">12,00 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="Assiette de bulot" data-description="" data-price="8,00 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre2">Assiette de bulot</h4>
+                    <p data-translate="description2"></p>
+                    <span class="price">8,00 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="Avocat aux Crevettes" data-description="" data-price="8,50 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre3">Avocat aux Crevettes</h4>
+                    <p data-translate="description3"></p>
+                    <span class="price">8,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            <div class="dropdown-item" data-title="Amandes farcies" data-description="Par 6 ou par 12" data-price="4,70€ ou 9,40€" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre4">Amandes farcies</h4>
+                    <p data-translate="description4">Par 6 ou par 12</p>
+                    <span class="price">4,70€ ou 9,40€</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <!-- Ajoutez plus d'éléments ici -->
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <div class="menu-header" data-target="salade-menu">
+            <span data-translate="categorie2">SALADES</span>
+            <button class="toggle-btn closed"></button>
+        </div>
+        <div class="dropdown-content" id="salade-menu">
+            <!-- Ajoutez ici les éléments pour Entrée -->
+             
+            <!-- Modified By Yasmin  -->
+            <div class="dropdown-item" data-allergens=""> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre5">Salade du crabe vert</h4>
+                    <p data-translate="description5">Salade verte, jambon de pays, crevettes, saumon fumé, tomate</p>
+                    <span class="price">15,70 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            <!-- Modified End By Yasmin  -->
+            
+            <div class="dropdown-item" data-title="Crottin de chavignol chaud" data-description="Sur toats, salade verte, noix, jambon de pays, miel, tomate séchée" data-price="14,70 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre6">Crottin de chavignol chaud</h4>
+                    <p data-translate="description6">Sur toats, salade verte, noix, jambon de pays, miel, tomate séchée</p>
+                    <span class="price">14,70 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="Salade césar" data-description="Poulet pané Panko, salade, sauce césar, croutons, parmesan, tomate séchée" data-price="16,50 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre7">Salade césar</h4>
+                    <p data-translate="description7">Poulet pané Panko, salade, sauce césar, croutons, parmesan, tomate séchée</p>
+                    <span class="price">16,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            <!-- Ajoutez plus d'éléments ici -->
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <div class="menu-header" data-target="moule-menu">
+            <span data-translate="categorie3">MOULES</span>
+            <button class="toggle-btn closed"></button>
+        </div>
+        <div class="dropdown-content" id="moule-menu">
+            <!-- Ajoutez ici les éléments pour Entrée -->
+            <div class="dropdown-item" data-title="Moules au gorgonzola" data-description="Crème, gorgonzola, cidre, oignons (servies avec des frites)" data-price="15,90 €" data-image="image/nachos.jpg" data-allergens=""> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre8">Moules au gorgonzola</h4>
+                    <p data-translate="description8">Crème, gorgonzola, cidre, oignons (servies avec des frites)</p>
+                    <span class="price">15,90 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="Moules normandes" data-description="Crème, cidre, oignons (servies avec des frites)" data-price="15,50 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre9">Moules normandes</h4>
+                    <p data-translate="description9">Crème, cidre, oignons (servies avec des frites)</p>
+                    <span class="price">15,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="Moules à la crème d'ail" data-description="Crème d'ail, crème, cidre, oignons (servies avec des frites)" data-price="15,50 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre10">Moules à la crème d'ail</h4>
+                    <p data-translate="description10">Crème d'ail, crème, cidre, oignons (servies avec des frites)</p>
+                    <span class="price">15,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Moules marinières" data-description="Vin blanc, oignons (servies avec des frites)" data-price="14,50 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre11">Moules marinières</h4>
+                    <p data-translate="description11">Vin blanc, oignons (servies avec des frites)</p>
+                    <span class="price">14,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            <!-- Ajoutez plus d'éléments ici -->
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <div class="menu-header" data-target="burgerviande-menu">
+            <span data-translate="categorie4">BURGER VIANDES ET AUTRE</span>
+            <button class="toggle-btn closed"></button>
+        </div>
+        <div class="dropdown-content" id="burgerviande-menu">
+            <!-- Ajoutez ici les éléments pour Entrée -->
+            <div class="dropdown-item" data-title="Hamburger" data-description="Pain, steak haché, salade, tomate, oignon, cornichon, sauce cocktail" data-price="15,20 €" data-image="image/nachos.jpg" data-allergens=""> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre12">Hamburger</h4>
+                    <p data-translate="description12">Pain, steak haché, salade, tomate, oignon, cornichon, sauce cocktail</p>
+                    <span class="price">15,20 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="Cheeseburger" data-description="Pain, cheddar, steak haché, salade, tomate, oignon, cornichon, sauce cocktail" data-price="15,70 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre13">Cheeseburger</h4>
+                    <p data-translate="description13">Pain, cheddar, steak haché, salade, tomate, oignon, cornichon, sauce cocktail</p>
+                    <span class="price">15,70 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="Chicken" data-description="Pain, poulet pané, salade, tomate, oignon, sauce tartare" data-price="15,70 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre14">Chicken</h4>
+                    <p data-translate="description14">Pain, poulet pané, salade, tomate, oignon, sauce tartare</p>
+                    <span class="price">15,70 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Tartare de boeuf" data-description="Préparé par nos soins" data-price="15,30 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre15">Tartare de boeuf</h4>
+                    <p data-translate="description15">Préparé par nos soins</p>
+                    <span class="price">15,30 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Jarret de porc grillé" data-description="Vinaigrette, échalote" data-price="15,00 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre16">Jarret de porc grillé</h4>
+                    <p data-translate="description16">Vinaigrette, échalote</p>
+                    <span class="price">15,00 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Nos suggestions à l'ardoise" data-description="Suggestions à l'ardoise, n'hésitez pas à demander aux serveurs" data-price="" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre17">Nos suggestions à l'ardoise</h4>
+                    <p data-translate="description17">Suggestions à l'ardoise, n'hésitez pas à demander aux serveurs</p>
+                    <span class="price"></span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            <!-- Ajoutez plus d'éléments ici -->
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <div class="menu-header" data-target="pate-menu">
+            <span data-translate="categorie5">PÂTES</span>
+            <button class="toggle-btn closed"></button>
+        </div>
+        <div class="dropdown-content" id="pate-menu">
+            <!-- Ajoutez ici les éléments pour Entrée -->
+            <div class="dropdown-item" data-title="Pâtes bolognaises" data-description="Steak haché, sauce tomate, champignons, oignons" data-price="13,50 €" data-image="image/nachos.jpg" data-allergens=""> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre18">Pâtes bolognaises</h4>
+                    <p data-translate="description18">Steak haché, sauce tomate, champignons, oignons</p>
+                    <span class="price">13,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="Pâtes à la carbonara" data-description="Crème, lardons, champignons, oeuf" data-price="13,50 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre19">Pâtes à la carbonara</h4>
+                    <p data-translate="description19">Crème, lardons, champignons, oeuf</p>
+                    <span class="price">13,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="Pâtes au saumon" data-description="Saumon fumé, crème, aneth" data-price="14,00 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre20">Pâtes au saumon</h4>
+                    <p data-translate="description20">Saumon fumé, crème, aneth</p>
+                    <span class="price">14,00 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            <!-- Ajoutez plus d'éléments ici -->
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <div class="menu-header" data-target="poisson-menu">
+            <span data-translate="categorie6">POISSONS ET FRUITS DE MER</span>
+            <button class="toggle-btn closed"></button>
+        </div>
+        <div class="dropdown-content" id="poisson-menu">
+            <!-- Ajoutez ici les éléments pour Entrée -->
+            <div class="dropdown-item" data-title="Suggestion du moment" data-description="Selon arrivage" data-price="" data-image="image/nachos.jpg" data-allergens=""> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre21">Suggestion du moment</h4>
+                    <p data-translate="description21">Selon arrivage</p>
+                    <span class="price"></span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="Fish and chips du crabe" data-description="Sauce tartare" data-price="16,50 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre22">Fish and chips du crabe</h4>
+                    <p data-translate="description22">Sauce tartare</p>
+                    <span class="price">16,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="Sauté de gambas" data-description="Poivrons, ail, soja, gingembre, riz" data-price="18,00 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre23">Sauté de gambas</h4>
+                    <p data-translate="description23">Poivrons, ail, soja, gingembre, riz</p>
+                    <span class="price">18,00 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            <!-- Ajoutez plus d'éléments ici -->
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <div class="menu-header" data-target="pizza-menu">
+            <span data-translate="categorie7">PIZZA</span>
+            <button class="toggle-btn closed"></button>
+        </div>
+        <div class="dropdown-content" id="pizza-menu">
+            <!-- Ajoutez ici les éléments pour Entrée -->
+            <div class="dropdown-item" data-title="La simple" data-description="Tomate, mozzarella" data-price="12,00 €" data-image="image/nachos.jpg" data-allergens=""> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre24">La simple</h4>
+                    <p data-translate="description24">Tomate, mozzarella</p>
+                    <span class="price">12,00 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="La croisette" data-description="Tomate, mozzarella, jambon" data-price="12,70 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre25">La croisette</h4>
+                    <p data-translate="description25">Tomate, mozzarella, jambon</p>
+                    <span class="price">12,70 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="La cabine" data-description="Tomate, mozzarella, anchois, câpres, olives" data-price="14,20 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre26">La cabine</h4>
+                    <p data-translate="description26">Tomate, mozzarella, anchois, câpres, olives</p>
+                    <span class="price">14,20 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="La côte de nacre" data-description="Tomate, mozzarella, jambon, champignons, origan" data-price="14,20 €" data-image="image/nachos.jpg" data-allergens=""> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre27">La côte de nacre</h4>
+                    <p data-translate="description27">Tomate, mozzarella, jambon, champignons, origan</p>
+                    <span class="price">14,20 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="L'hermanvillaise" data-description="Tomate, mozzarella, steak haché, oignons, oeuf" data-price="14,20 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre28">L'hermanvillaise</h4>
+                    <p data-translate="description28">Tomate, mozzarella, steak haché, oignons, oeuf</p>
+                    <span class="price">14,20 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="La courseullaise" data-description="Tomate, mozzarella, jambon, merguez, poivrons marinés, oignons" data-price="14,80 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre29">La courseullaise</h4>
+                    <p data-translate="description29">Tomate, mozzarella, jambon, merguez, poivrons marinés, oignons</p>
+                    <span class="price">14,80 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="La langrunaise" data-description="Tomate, mozzarella, merguez, chorizo, oignons" data-price="14,80 €" data-image="image/nachos.jpg" data-allergens=""> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre30">La langrunaise</h4>
+                    <p data-translate="description30">Tomate, mozzarella, merguez, chorizo, oignons</p>
+                    <span class="price">14,80 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="La douvraise" data-description="Tomate, mozzarella, chèvre, lardons, olives, basilic" data-price="14,60 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre31">La douvraise</h4>
+                    <p data-translate="description31">Tomate, mozzarella, chèvre, lardons, olives, basilic</p>
+                    <span class="price">14,60 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="La collevillaise" data-description="Tomate, mozzarella, sardines, citron vert, ail, fines herbes" data-price="14,20 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre32">La collevillaise</h4>
+                    <p data-translate="description32">Tomate, mozzarella, sardines, citron vert, ail, fines herbes</p>
+                    <span class="price">14,20 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="La saint-aubinaise" data-description="Tomate, mozzarella, andouille, pomme fruit, crème, pont-l'évêque" data-price="15,00 €" data-image="image/nachos.jpg" data-allergens=""> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre33">La saint-aubinaise</h4>
+                    <p data-translate="description33">Tomate, mozzarella, andouille, pomme fruit, crème, pont-l'évêque</p>
+                    <span class="price">15,00 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="Pizza du marché" data-description="Crème, olive, jambon de pays, parmesan, tomate séchée, burratina, crème balsamique" data-price="15,90 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre34">Pizza du marché</h4>
+                    <p data-translate="description34">Crème, olive, jambon de pays, parmesan, tomate séchée, burratina, crème balsamique</p>
+                    <span class="price">15,90 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="La madras" data-description="Tomate, mozzarella, poulet curry, crème" data-price="14,50 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre35">La madras</h4>
+                    <p data-translate="description35">Tomate, mozzarella, poulet curry, crème</p>
+                    <span class="price">14,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="La rive plage" data-description="Tomate, mozzarella, jambon fumé, champignons, oeuf, crème, origan" data-price="14,80 €" data-image="image/nachos.jpg" data-allergens=""> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre36">La rive plage</h4>
+                    <p data-translate="description36">Tomate, mozzarella, jambon fumé, champignons, oeuf, crème, origan</p>
+                    <span class="price">14,80 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="La lutine" data-description="Tomate, mozzarella, camembert, chèvre, gorgonzola" data-price="14,50 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre37">La lutine</h4>
+                    <p data-translate="description37">Tomate, mozzarella, camembert, chèvre, gorgonzola</p>
+                    <span class="price">14,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="La normande" data-description="Base crème, mozarrella, camembert, lardons, oignons, oeuf" data-price="15,00 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre38">La normande</h4>
+                    <p data-translate="description38">Base crème, mozarrella, camembert, lardons, oignons, oeuf</p>
+                    <span class="price">15,00 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="La végétarienne" data-description="Tomate, mozzarella, artichauts marinés, olives, poivrons marinés, champignons, crème, estragon" data-price="15,00 €" data-image="image/nachos.jpg" data-allergens=""> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre39">La végétarienne</h4>
+                    <p data-translate="description39">Tomate, mozzarella, artichauts marinés, olives, poivrons marinés, champignons, crème, estragon</p>
+                    <span class="price">15,00 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="La clairette" data-description="Tomate, mozarrella, oignons, champignons, poulet, oeuf, estragon, crème" data-price="14,90 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre40">La clairette</h4>
+                    <p data-translate="description40">Tomate, mozarrella, oignons, champignons, poulet, oeuf, estragon, crème</p>
+                    <span class="price">14,90 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="La calzone" data-description="Tomate, mozzarella, jambon, champignons, origan, oeuf" data-price="14,50 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre41">La calzone</h4>
+                    <p data-translate="description41">Tomate, mozzarella, jambon, champignons, origan, oeuf</p>
+                    <span class="price">14,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="La seguin" data-description="Tomate, mozzarella, jambon fumé, chèvre, miel, noix" data-price="14,20 €" data-image="image/nachos.jpg" data-allergens=""> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre42">La seguin</h4>
+                    <p data-translate="description42">Tomate, mozzarella, jambon fumé, chèvre, miel, noix</p>
+                    <span class="price">14,20 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="La lionnaise" data-description="Tomate, mozzarella, pomme de terre, raclette, jambon fumé, crème" data-price="16,00 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre43">La lionnaise</h4>
+                    <p data-translate="description43">Tomate, mozzarella, pomme de terre, raclette, jambon fumé, crème</p>
+                    <span class="price">16,00 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="La ouistrehamaise" data-description="Tomate, mozzarella, saumon fumé, ciboulette, crème, citron" data-price="15,80 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre44">La ouistrehamaise</h4>
+                    <p data-translate="description44">Tomate, mozzarella, saumon fumé, ciboulette, crème, citron</p>
+                    <span class="price">15,80 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            <!-- Ajoutez plus d'éléments ici -->
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <div class="menu-header" data-target="dessert-menu">
+            <span data-translate="categorie8">DESSERTS</span>
+            <button class="toggle-btn closed"></button>
+        </div>
+        <div class="dropdown-content" id="dessert-menu">
+            <!-- Ajoutez ici les éléments pour Entrée -->
+            <div class="dropdown-item" data-title="Crème brulée maison" data-description="" data-price="7,00 €" data-image="image/nachos.jpg" data-allergens=""> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre45">Crème brulée maison</h4>
+                    <p data-translate="description45"></p>
+                    <span class="price">7,00 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="Tatin pomme" data-description="" data-price="7,50 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre46">Tatin pomme</h4>
+                    <p data-translate="description46"></p>
+                    <span class="price">7,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="Panna cotta" data-description="" data-price="7,90 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre47">Panna cotta</h4>
+                    <p data-translate="description47"></p>
+                    <span class="price">7,90 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Profiteroles maison" data-description="Chocolat chaud et chantilly" data-price="8,90 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre48">Profiteroles maison</h4>
+                    <p data-translate="description48">Chocolat chaud et chantilly</p>
+                    <span class="price">8,90 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="Cheesecake maison" data-description="Au coulis de fruits rouges" data-price="7,30 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre49">Cheesecake maison</h4>
+                    <p data-translate="description49">Au coulis de fruits rouges</p>
+                    <span class="price">7,30 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Café gourmand" data-description="Trois douceurs sucrées et un café: 6,70€; Café crème, ou cappuccino, ou chocolat (supplément): 0,60€" data-price="7,30 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre50">Café gourmand</h4>
+                    <p data-translate="description50">Trois douceurs sucrées et un café: 6,70€; Café crème, ou cappuccino, ou chocolat (supplément): 0,60€</p>
+                    <span class="price">7,30 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            
+            <!-- Ajoutez plus d'éléments ici -->
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <div class="menu-header" data-target="dessertglace-menu">
+            <span data-translate="categorie9">DESSERTS GLACÉES</span>
+            <button class="toggle-btn closed"></button>
+        </div>
+        <div class="dropdown-content" id="dessertglace-menu">
+            <!-- Ajoutez ici les éléments pour Entrée -->
+            <div class="dropdown-item" data-title="La passion du crabe" data-description="Glace menthe, chocolat, caramel, Get 27, chocolat chaud" data-price="7,50 €" data-image="image/nachos.jpg" data-allergens=""> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre52">La passion du crabe</h4>
+                    <p data-translate="description52">Glace menthe, chocolat, caramel, Get 27, chocolat chaud</p>
+                    <span class="price">7,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="Banana split" data-description="Banane fruit, glace vanille, fraise, chocolat, chocolat chaud, chantilly" data-price="7,50 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre53">Banana split</h4>
+                    <p data-translate="description53">Banane fruit, glace vanille, fraise, chocolat, chocolat chaud, chantilly</p>
+                    <span class="price">7,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="La belle créole" data-description="Rhum, raisins, banane, rhum, chantilly" data-price="7,50 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre54">La belle créole</h4>
+                    <p data-translate="description54">Rhum, raisins, banane, rhum, chantilly</p>
+                    <span class="price">7,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Fleurs de pommier" data-description="Pommes caramélisées, glace cannelle, pomme, calvados" data-price="7,50 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre55">Fleurs de pommier</h4>
+                    <p data-translate="description55">Pommes caramélisées, glace cannelle, pomme, calvados</p>
+                    <span class="price">7,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="Dame blanche" data-description="Glace vanille, chocolat chaud, chantilly" data-price="7,50 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre56">Dame blanche</h4>
+                    <p data-translate="description56">Glace vanille, chocolat chaud, chantilly</p>
+                    <span class="price">7,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Chaud cacao" data-description="Glace chocolat, café, caramel, chocolat chaud, chantilly" data-price="7,50 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre57">Chaud cacao</h4>
+                    <p data-translate="description57">Glace chocolat, café, caramel, chocolat chaud, chantilly</p>
+                    <span class="price">7,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Pêche melba" data-description="Pêche sirop, glace vanille, gelée de groseille, chantilly" data-price="7,50 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre58">Pêche melba</h4>
+                    <p data-translate="description58">Pêche sirop, glace vanille, gelée de groseille, chantilly</p>
+                    <span class="price">7,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Bananaramel" data-description="Glace vanille, caramel, banane, sauce caramel, banane fruit, chantilly" data-price="7,50 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre59">Bananaramel</h4>
+                    <p data-translate="description59">Glace vanille, caramel, banane, sauce caramel, banane fruit, chantilly</p>
+                    <span class="price">7,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Poire belle hélène" data-description="Poire, glace vanille, chocolat chaud, chantilly" data-price="7,50 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre60">Poire belle hélène</h4>
+                    <p data-translate="description60">Poire, glace vanille, chocolat chaud, chantilly</p>
+                    <span class="price">7,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Le colonel" data-description="Glace citron vert, vodka" data-price="7,50 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre61">Le colonel</h4>
+                    <p data-translate="description61">Glace citron vert, vodka</p>
+                    <span class="price">7,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Liégois café" data-description="Café, sauce café, chantilly" data-price="7,50 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre62">Liégois café</h4>
+                    <p data-translate="description62">Café, sauce café, chantilly</p>
+                    <span class="price">7,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Liégois chocolat" data-description="Chocolat, chocolat chaud, chantilly" data-price="7,50 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre63">Liégois chocolat</h4>
+                    <p data-translate="description63">Chocolat, chocolat chaud, chantilly</p>
+                    <span class="price">7,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Liégois caramel" data-description="Caramel, sauce caramel, chantilly" data-price="7,50 €" data-image="image/nachos.jpg" data-allergens="Mollusques"> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre64">Liégois caramel</h4>
+                    <p data-translate="description64">Caramel, sauce caramel, chantilly</p>
+                    <span class="price">7,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            <!-- Ajoutez plus d'éléments ici -->
+        </div>
+    </div>
+</div>
+
+<div class="boissons" id="boissons">
+    <div class="menu-section">
+        <div class="menu-header" data-target="boissonfraiche-menu">
+            <span data-translate="categorie10">BOISSONS FRAICHES</span>
+            <button class="toggle-btn closed"></button>
+        </div>
+        <div class="dropdown-content" id="boissonfraiche-menu">
+            <!-- Ajoutez ici les éléments pour Entrée -->
+            <div class="dropdown-item" data-title="Eaux" data-description="Plancoet 50cl: 4,00 €; plancoet fines bulles 50cl: 4,10 €; plancoet 1L: 5,00 €; plancoet fines bulles 1L: 5,10€" data-price="" data-image="image/nachos.jpg" data-allergens=""> 
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre66">Eaux</h4>
+                    <p data-translate="description66">Plancoet 50cl: 4,00 €; plancoet fines bulles 50cl: 4,10 €; plancoet 1L: 5,00 €; plancoet fines bulles 1L: 5,10€</p>
+                    <span class="price"></span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="Sirop à l'eau" data-description="" data-price="2,90 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre67">Sirop à l'eau</h4>
+                    <p data-translate="description67"></p>
+                    <span class="price">2,90 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            <div class="dropdown-item" data-title="Jus de fruits" data-description="" data-price="3,40 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre68">Jus de fruits</h4>
+                    <p data-translate="description68"></p>
+                    <span class="price">3,40 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Coca cola" data-description="" data-price="3,80 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre69">Coca cola</h4>
+                    <p data-translate="description69"></p>
+                    <span class="price">3,80 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Diabolo" data-description="" data-price="3,50 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre70">Diabolo</h4>
+                    <p data-translate="description70"></p>
+                    <span class="price">3,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Orangina" data-description="" data-price="3,80 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre71">Orangina</h4>
+                    <p data-translate="description71"></p>
+                    <span class="price">3,80 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Ice tea" data-description="" data-price="3,40 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre72">Ice tea</h4>
+                    <p data-translate="description72"></p>
+                    <span class="price">3,40 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Coca zero" data-description="" data-price="3,80 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre73">Coca zero</h4>
+                    <p data-translate="description73"></p>
+                    <span class="price">3,80 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Schweppes" data-description="" data-price="3,80 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre74">Schweppes</h4>
+                    <p data-translate="description74"></p>
+                    <span class="price">3,80 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Schweppes agrumes" data-description="" data-price="3,80 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre75">Schweppes agrumes</h4>
+                    <p data-translate="description75"></p>
+                    <span class="price">3,80 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Limonade" data-description="" data-price="3,10 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre76">Limonade</h4>
+                    <p data-translate="description76"></p>
+                    <span class="price">3,10 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            <!-- Ajoutez plus d'éléments ici -->
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <div class="menu-header" data-target="boissonchaude-menu">
+            <span data-translate="categorie11">BOISSONS CHAUDES</span>
+            <button class="toggle-btn closed"></button>
+        </div>
+        <div class="dropdown-content" id="boissonchaude-menu">
+            <!-- Ajoutez ici les éléments pour Dessert -->
+            <div class="dropdown-item" data-title="Café expresso" data-description="" data-price="1,90 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre77">Café expresso</h4>
+                    <p data-translate="description77"></p>
+                    <span class="price">1,90 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Noisette" data-description="" data-price="2,00 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre78">Noisette</h4>
+                    <p data-translate="description78"></p>
+                    <span class="price">2,00 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Grand crème" data-description="" data-price="4,40 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre79">Grand crème</h4>
+                    <p data-translate="description79"></p>
+                    <span class="price">4,40 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Thé aromatisé" data-description="" data-price="3,90 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre80">Thé aromatisé</h4>
+                    <p data-translate="description80"></p>
+                    <span class="price">3,90 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Thé au lait" data-description="" data-price="3,70 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre81">Thé au lait</h4>
+                    <p data-translate="description81"></p>
+                    <span class="price">3,70 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Cappuccino" data-description="" data-price="4,40 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre82">Cappuccino</h4>
+                    <p data-translate="description82"></p>
+                    <span class="price">4,40 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Café viennois" data-description="" data-price="4,60 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre83">Café viennois</h4>
+                    <p data-translate="description83"></p>
+                    <span class="price">4,60 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Infusions" data-description="" data-price="3,20 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre84">Infusions</h4>
+                    <p data-translate="description84"></p>
+                    <span class="price">3,20 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Café double" data-description="" data-price="3,80 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre85">Café double</h4>
+                    <p data-translate="description85"></p>
+                    <span class="price">3,80 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Petit crème" data-description="" data-price="3,00 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre86">Petit crème</h4>
+                    <p data-translate="description86"></p>
+                    <span class="price">3,00 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Chocolat chaud" data-description="" data-price="4,10 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre87">Chocolat chaud</h4>
+                    <p data-translate="description87"></p>
+                    <span class="price">4,10 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Thé nature" data-description="" data-price="3,20 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre88">Thé nature</h4>
+                    <p data-translate="description88"></p>
+                    <span class="price">3,20 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Thé citron" data-description="" data-price="3,50 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre89">Thé citron</h4>
+                    <p data-translate="description89"></p>
+                    <span class="price">3,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Irish coffee" data-description="" data-price="7,30 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre90">Irish coffee</h4>
+                    <p data-translate="description90"></p>
+                    <span class="price">7,30 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Chocolat viennois" data-description="" data-price="4,60 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre91">Chocolat viennois</h4>
+                    <p data-translate="description91"></p>
+                    <span class="price">4,60 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <div class="menu-header" data-target="digestif-menu">
+            <span data-translate="categorie12">DIGESTIFS ET LIQUEURS</span>
+            <button class="toggle-btn closed"></button>
+        </div>
+        <div class="dropdown-content" id="digestif-menu">
+            <!-- Ajoutez ici les éléments pour Boisson -->
+            <div class="dropdown-item" data-title="Rhum diplomatico" data-description="" data-price="6,90 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre92">Rhum diplomatico</h4>
+                    <p data-translate="description92"></p>
+                    <span class="price">6,90 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Get 27/31" data-description="" data-price="5,20 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre93">Get 27/31</h4>
+                    <p data-translate="description93"></p>
+                    <span class="price">5,20 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Cognac VSOP" data-description="" data-price="7,20 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre94">Cognac VSOP</h4>
+                    <p data-translate="description94"></p>
+                    <span class="price">7,20 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Baileys" data-description="" data-price="5,20 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre95">Baileys</h4>
+                    <p data-translate="description95"></p>
+                    <span class="price">5,20 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Calvados hors d'âge" data-description="" data-price="7,20 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre96">Calvados hors d'âge</h4>
+                    <p data-translate="description96"></p>
+                    <span class="price">7,20 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            
+            
+            <!-- Ajoutez plus d'éléments ici -->
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <div class="menu-header" data-target="aperitif-menu">
+            <span data-translate="categorie13">APÉRITIFS ET ALCOOLS</span>
+            <button class="toggle-btn closed"></button>
+        </div>
+        <div class="dropdown-content" id="aperitif-menu">
+            <!-- Ajoutez ici les éléments pour Boisson -->
+            <div class="dropdown-item" data-title="Américano maison" data-description="" data-price="8,00 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre97">Américano maison</h4>
+                    <p data-translate="description97"></p>
+                    <span class="price">8,00 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Porto" data-description="" data-price="4,50 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre98">Porto</h4>
+                    <p data-translate="description98"></p>
+                    <span class="price">4,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Clan Campbell" data-description="" data-price="6,00 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre99">Clan Campbell</h4>
+                    <p data-translate="description96"></p>
+                    <span class="price">6,00 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Whisky coca" data-description="" data-price="6,50 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre100">Whisky coca</h4>
+                    <p data-translate="description100"></p>
+                    <span class="price">6,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Gin Tonic" data-description="" data-price="6,50 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre101">Gin Tonic</h4>
+                    <p data-translate="description101"></p>
+                    <span class="price">6,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Vodka Orange" data-description="" data-price="6,50 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre102">Vodka Orange</h4>
+                    <p data-translate="description102"></p>
+                    <span class="price">6,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Pastis" data-description="" data-price="4,20 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre103">Pastis</h4>
+                    <p data-translate="description103"></p>
+                    <span class="price">4,20 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Ricard" data-description="" data-price="4,20 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre104">Ricard</h4>
+                    <p data-translate="description104"></p>
+                    <span class="price">4,20 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Martini" data-description="" data-price="4,80 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre105">Martini</h4>
+                    <p data-translate="description105"></p>
+                    <span class="price">4,80 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Kir Normand" data-description="" data-price="4,20 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre106">Kir Normand</h4>
+                    <p data-translate="description106"></p>
+                    <span class="price">4,20 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Kir Royal" data-description="" data-price="10,00 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre107">Kir Royal</h4>
+                    <p data-translate="description107"></p>
+                    <span class="price">10,00 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Campari" data-description="" data-price="4,70 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre108">Campari</h4>
+                    <p data-translate="description108"></p>
+                    <span class="price">4,70 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Suze" data-description="" data-price="4,20 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre109">Suze</h4>
+                    <p data-translate="description109"></p>
+                    <span class="price">4,20 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Pommeau" data-description="" data-price="4,20 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre110">Pommeau</h4>
+                    <p data-translate="description110"></p>
+                    <span class="price">4,20 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Aberlour 1O ans" data-description="" data-price="7,50 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre111">Aberlour 10 ans</h4>
+                    <p data-translate="description111"></p>
+                    <span class="price">7,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Bushmill" data-description="" data-price="7,50 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre112">Bushmill</h4>
+                    <p data-translate="description112"></p>
+                    <span class="price">7,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Jack Daniel's" data-description="" data-price="7,50 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre113">Jack Daniel's</h4>
+                    <p data-translate="description113"></p>
+                    <span class="price">7,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Coupe de Champagne" data-description="" data-price="9,50 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre114">Coupe de Champagne</h4>
+                    <p data-translate="description114"></p>
+                    <span class="price">9,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Verre de vin" data-description="" data-price="3,80 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre115">Verre de vin</h4>
+                    <p data-translate="description115"></p>
+                    <span class="price">3,80 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Rhum Pompéro" data-description="" data-price="6,20 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre116">Rhum Pompéro</h4>
+                    <p data-translate="description116"></p>
+                    <span class="price">6,20 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Cidre brut fermier" data-description="Bolée 20cl: 4,20€; Bouteille: 13,00€" data-price="" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre117"></h4>
+                    <p data-translate="description117"></p>
+                    <span class="price"></span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            <!-- Ajoutez plus d'éléments ici -->
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <div class="menu-header" data-target="biere-menu">
+            <span data-translate="categorie14">BIÈRES</span>
+            <button class="toggle-btn closed"></button>
+        </div>
+        <div class="dropdown-content" id="biere-menu">
+            <!-- Ajoutez ici les éléments pour Boisson -->
+            <div class="dropdown-item" data-title="Picon bière 25Cl" data-description="A la pression" data-price="4,30 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre118">Picon bière 25Cl</h4>
+                    <p data-translate="description118">A la pression</p>
+                    <span class="price">4,30 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Affligem Blanche 25Cl ou 50Cl" data-description="A la pression" data-price="4,20€ ou 8,40€" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre119">Affligem Blanche 25Cl ou 50Cl</h4>
+                    <p data-translate="description119">A la pression</p>
+                    <span class="price">4,20€ ou 8,40€</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Pelforth Blonde 25Cl ou 50Cl" data-description="A la pression" data-price="3,80€ ou 7,60€" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre120">Pelforth Blonde 25Cl ou 50Cl</h4>
+                    <p data-translate="description120">A la pression</p>
+                    <span class="price">3,80€ ou 7,20€</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Affligem 25Cl ou 50Cl" data-description="A la pression" data-price="4,00€ ou 8,00€" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre121">Affligem 25Cl ou 50Cl</h4>
+                    <p data-translate="description121">A la pression</p>
+                    <span class="price">4,00€ ou 8,00€</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Heineken 00 25Cl" data-description="A la pression" data-price="3,70 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre122">Heineken 00 25Cl</h4>
+                    <p data-translate="description122">A la pression</p>
+                    <span class="price">3,70 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Kwak 33Cl" data-description="En bouteille" data-price="5,50 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre123">Kwak 33Cl</h4>
+                    <p data-translate="description123">En bouteille</p>
+                    <span class="price">5,50</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="1664 25Cl" data-description="En bouteille" data-price="4,40 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre124">1664 25Cl</h4>
+                    <p data-translate="description124">En bouteille</p>
+                    <span class="price">4,40 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Desperados 33Cl" data-description="En bouteille" data-price="5,50 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre125">Desperados 33Cl</h4>
+                    <p data-translate="description125">En bouteille</p>
+                    <span class="price">5,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+
+            <div class="dropdown-item" data-title="Duvel 33Cl" data-description="En bouteille" data-price="5,50 €" data-image="image/nachos.jpg" data-allergens="Fruit de mer">
+                <img src="image/nachos.jpg" alt="Starter" class="menu-image">
+                <div class="item-details">
+                    <h4 data-translate="titre126">Duvel 33Cl</h4>
+                    <p data-translate="description126">En bouteille</p>
+                    <span class="price">5,50 €</span>
+                </div>
+                <button class="add-btn">+</button>
+            </div>
+            <!-- Ajoutez plus d'éléments ici -->
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="social-links">
+        <a href="https://www.instagram.com/lecrabevertrestaurant/" target="_blank"><img src= "image/instagram.webp" alt="Instagram"></a>
+        <a href="https://www.facebook.com/LeCrabeVertSaintAubin/?locale=fr_FR" target="_blank"><img src="image/facebook.png" alt="Facebook"></a>
+        <a href="https://www.google.com/search?client=opera-gx&hs=4yu&sca_esv=847412b30e358a21&sca_upv=1&sxsrf=ADLYWIJXq8C0scGxH_0_OGMpY2kzZlzutg:1723154137862&q=le+crabe+vert&uds=ADvngMjQHaQ_Sd3njB_-fgu2qxO-bLnpmi0a3QVJytzmaTaxawPJAPbn9RJW3Aw7fWqdEVT_rRRXTsEb89ZUz_pZ42kNNK3r8AYTZuBOdSFF57pEoEfboSY&si=ACC90nzcy7sviKw0NTZoUBUzhQehr3jouizIrVSf6avWI23m1cJ-yDoU0zTbzJN8c4kQdOurWCWEHSPsc4sMmkyLBYUyO4pN7z6zSMRSBmw-Pbr4qmG5WB4%3D&sa=X&ved=2ahUKEwiqgp-yseaHAxVxUaQEHRc2GJwQ3PALegQIFxAE&cshid=1723154203183648&biw=917&bih=919&dpr=1" target="_blank"><img src="image/googleicon.png" alt="Google"></a>
+        <a href="https://www.tripadvisor.fr/Restaurant_Review-g1055336-d1381237-Reviews-Le_Crabe_Vert-Saint_Aubin_Sur_Mer_Calvados_Basse_Normandie_Normandy.html" target="_blank"><img src="image/tripadvisor.png" alt="Tripadvisor"></a>
+    </div>
+    
+    <div class="horaires">
+        <h3>Horaires d'ouverture</h3>
+        <ul>
+            <li>Lundi : 9h - 18h</li>
+            <li>Mardi : 9h - 18h</li>
+            <li>Mercredi : 9h - 18h</li>
+            <li>Jeudi : 9h - 18h</li>
+            <li>Vendredi : 9h - 18h</li>
+            <li>Samedi : 10h - 17h</li>
+            <li>Dimanche : Fermé</li>
+        </ul>
+    </div>
+
+</footer>
+
+<!-- Modified By Yasmin -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <img id="modal-image" src="" alt="Starter" class="modal-image">
+        <div class="modal-details">
+            <h4 id="modalTitle">Titre</h4>
+            <p id="modalDescription" class="description-liste">Description</p>
+            <div class="modal-footer">
+                <span id="modalPrice" class="price">Prix</span>
+                <button id="modal-allergen-btn" class="allergen-btn" >Allergènes</button>
+            </div>
+        </div>
+        <!-- Section pour les allergènes -->
+        <div id="modal-allergen-list" class="allergen-list">
+            <ul id="allergen-items">
+                <!-- Liste d'allergènes ajoutée dynamiquement -->
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="translations.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
